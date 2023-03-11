@@ -156,6 +156,8 @@ h3 {
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
     url(/images/people-office\ 1.jpg);
+    /* а тут через гітхаб не підтягуються картинка та іконки, в мене все працює на ноуті
+    шо робити? */
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
