@@ -155,7 +155,7 @@ h3 {
     padding-bottom: 188px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
-    url(/images/people-office.jpg);
+    url(/images/background-img/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -549,33 +549,34 @@ h3 {
 .social-list-footer {
     display: flex;
     gap: 24px;
+    justify-content: center;
     margin-top: 8px;
-    margin-top: 16px;
 }
 
 .social-icon-footer {
+    display: block;
     width: 24px;
     height: 24px;
     fill: var(--cloud);
+    fill-opacity: 1;
 }
 
-.social-item-footer {
+.social-link-footer {    
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background: var(--white);
+    background-color: var(--white);
     opacity: 0.1;
-}
-
-.social-item-footer:hover
-.social-item-footer:focus {
-    background-color: var(--green);
-}
-
-.social-link-footer {
-    width: 100%;
-    height: 100%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-item-footer {
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--green);
+    opacity: 1;
 }
