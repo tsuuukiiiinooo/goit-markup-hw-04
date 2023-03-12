@@ -23,15 +23,15 @@ img {
 
 .visually-hidden {
     position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   } 
 
 .list {
@@ -150,14 +150,15 @@ h3 {
 }
 
 .section-main {
-    background: var(--navy-blue-color);
+    /* background: var(--navy-blue-color); */
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
-    url(/images/people-office\ 1.jpg);
+    url(/images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .main-headline {
@@ -202,6 +203,7 @@ h3 {
     padding-left: 32px;
     margin-top: 48px;
     border:1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn {
@@ -365,21 +367,16 @@ h3 {
     fill: var(--ocean);
 }
 
-.customer-item {
+.customer-link:hover,
+.customer-link:focus {
+    border-color: var(--ocean);
+}
+
+.customer-link {    
     width: 168px;
     height: 88px;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
-}
-
-.customer-item:hover,
-.customer-item:focus {
-    border-color: var(--ocean);
-}
-
-.customer-link {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,9 +482,12 @@ h3 {
     color: var(--slate);
 }
 
-.item-projects:hover,
-.item-projects:focus {
-    cursor: pointer;
+.link-projects {
+    display: block;
+}
+
+.link-projects:hover,
+.link-projects:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -525,29 +525,25 @@ h3 {
 }
 
 .social-icon {
+    display: block;
     width: 16px;
     height: 16px;
     fill: var(--cloud);
 }
 
-.social-item {
+.social-link {    
     width: 40px;
     height: 40px;
     background-color: var(--iris);
     border-radius: 50%;
-}
-
-.social-item:hover,
-.social-item:focus {
-    background-color: var(--ocean);
-}
-
-.social-link {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--ocean);
 }
 
 .social-list-footer {
@@ -569,7 +565,6 @@ h3 {
     border-radius: 50%;
     background: var(--white);
     opacity: 0.1;
-    /* не розумію, чому не працює тут беґраунд */
 }
 
 .social-item-footer:hover
