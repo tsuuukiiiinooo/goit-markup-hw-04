@@ -556,12 +556,12 @@ h3 {
 .social-link-footer {    
     width: 40px;
     height: 40px;
-    background-color: var(--white);
-    opacity: 0.1;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 .social-icon-footer {
@@ -569,6 +569,7 @@ h3 {
     width: 24px;
     height: 24px;
     fill: var(--cloud);
+    fill-opacity: 1;
 }
 
 .social-link-footer:hover,
