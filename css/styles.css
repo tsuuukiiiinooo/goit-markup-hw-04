@@ -156,10 +156,8 @@ h3 {
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
     url(/images/people-office\ 1.jpg);
-    /* а тут через гітхаб не підтягуються картинка та іконки, в мене все працює на ноуті
-    шо робити? */
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .main-headline {
@@ -253,9 +251,8 @@ h3 {
 
 .ab-us-icon-list {
     display: flex;
-    gap: 24px;
     justify-content: center;
-    margin-top: 72px;
+
 }
 
 .ab-us-icon {
@@ -270,14 +267,10 @@ h3 {
     background-color: var(--cloud);
     margin-bottom: 8px;
     border-radius: 4px;
-}
-
-.ab-us-icon-link {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 
@@ -367,7 +360,8 @@ h3 {
     fill: var(--light-slate);
 }
 
-.customer-link:hover .customer-icon{
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon{
     fill: var(--ocean);
 }
 
@@ -378,7 +372,8 @@ h3 {
     border-radius: 4px;
 }
 
-.customer-item:hover {
+.customer-item:hover,
+.customer-item:focus {
     border-color: var(--ocean);
 }
 
@@ -490,7 +485,8 @@ h3 {
     color: var(--slate);
 }
 
-.item-projects:hover {
+.item-projects:hover,
+.item-projects:focus {
     cursor: pointer;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -541,7 +537,8 @@ h3 {
     border-radius: 50%;
 }
 
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
     background-color: var(--ocean);
 }
 
@@ -575,7 +572,8 @@ h3 {
     /* не розумію, чому не працює тут беґраунд */
 }
 
-.social-item-footer:hover {
+.social-item-footer:hover
+.social-item-footer:focus {
     background-color: var(--green);
 }
 
