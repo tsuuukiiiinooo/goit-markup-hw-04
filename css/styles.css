@@ -553,14 +553,6 @@ h3 {
     margin-top: 8px;
 }
 
-.social-icon-footer {
-    display: block;
-    width: 24px;
-    height: 24px;
-    fill: var(--cloud);
-    fill-opacity: 1;
-}
-
 .social-link-footer {    
     width: 40px;
     height: 40px;
@@ -570,6 +562,13 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-icon-footer {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: var(--cloud);
 }
 
 .social-link-footer:hover,
