@@ -155,7 +155,7 @@ h3 {
     padding-bottom: 188px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
-    url(/images/background-img/people-office.jpg);
+    url(/images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -570,9 +570,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.social-item-footer {
 }
 
 .social-link-footer:hover,
